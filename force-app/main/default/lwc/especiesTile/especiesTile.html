@@ -1,0 +1,39 @@
+<template>
+        <lightning-card  title={especies.Name} icon-name="custom:custom5">
+             <lightning-button 
+             label="View Details" 
+             slot="actions" 
+             onclick={navigateToRecordViewPage}
+             ></lightning-button>
+             <!-- body start -->
+            <p class="slds-p-horizontal_small">{especies.Descripcion}</p>
+            <img
+            class="especies slds-align_absolute-center slds-var-m-arount-medium"
+            src={especies.Image_URL__c}
+            alt={especies.Name}
+            />
+            <div class="slds -var-p-horizontal_small slds-align_absolute-center"></p>
+            <template if:true={isOutdoors}>
+                <!--mostrar icono sol-->
+                <lightning-icon 
+                icon-name="custom:custom3"
+                alternative-text="Outdoors"
+                title="Outdoors"
+                ></lightning-icon>
+            </template>
+             <template if:true={isIndoors}>
+                <!--mostrar icono casa-->
+                <lightning-icon 
+                icon-name="standard:home"
+                alternative-text="Indoors"
+                title="Indoors"
+                ></lightning-icon>
+            </template>
+            </div>
+            <p class="slds-var-p-horizontal_small">{especies.Location__c}</p>
+            <!--body end-->
+           
+        </lightning-card>
+</template>
+
+    

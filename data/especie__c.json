@@ -1,0 +1,18 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "especie__c",
+                "referenceId": "especie__cRef1"
+            },
+            "Ideal_Max_Temperature__c": 15,
+            "Image_URL__c": "https://res.cloudinary.com/compo-com/image/fetch/c_fill,g_xy_center,f_auto,w_472,h_354,x_iw_mul_50_div_100,y_ih_mul_50_div_100/https://www.compo.de/dam/jcr:fdbba870-e002-430c-8b2e-c635fcc8074e/sunflower-bee_sonneblume-biene.jpg",
+            "Image__c": "<img src=\"https://res.cloudinary.com/compo-com/image/fetch/c_fill,g_xy_center,f_auto,w_472,h_354,x_iw_mul_50_div_100,y_ih_mul_50_div_100/https://www.compo.de/dam/jcr:fdbba870-e002-430c-8b2e-c635fcc8074e/sunflower-bee_sonneblume-biene.jpg\" alt=\"Image\" border=\"0\"/>",
+            "Location__c": "Indoors",
+            "Name": "girasol",
+            "OwnerId": "005fj00000BK4HFAA1",
+            "description__c": "amarillo",
+            "type__c": "Edible(comestible)"
+        }
+    ]
+}

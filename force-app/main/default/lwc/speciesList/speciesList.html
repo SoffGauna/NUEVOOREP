@@ -1,0 +1,24 @@
+<template>
+  <div class="slds-align_absolute-center">
+    <lightning-input 
+    type="text" 
+    label="Enter some text" 
+    onchange={handleInputChange}
+    ></lightning-input>
+  </div>
+ <div class="slds-align_absolute-center"> 
+  <div class="slds-grid">
+    <template if:true={Speciess.data}>
+    <template for:each={Speciess.data} for:item="item">
+       <div key={item.Id}>
+         <c-especies-tile 
+           especies={item}
+           class="slds-col slds-var-m-around_small"
+         ></c-especies-tile>
+       </div>
+    </template>
+   </template>
+   </div>
+  </div>
+</template>
+              
